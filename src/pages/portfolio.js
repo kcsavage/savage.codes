@@ -17,7 +17,7 @@ const Portfolio = () => (
 )
 
 const PortfolioItem = (item) => (
-  <div>
+  <div key={ item.name }>
     <h2>{ item.name }</h2>
     <p>{ item.brief }</p>
   </div>
