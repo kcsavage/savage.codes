@@ -1,12 +1,36 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import pic from '!file-loader!./me.JPG'
+
+const imgStyle = {
+  'borderRadius': '20px',
+  width: '200px'
+};
+
+const flexContainerStyle = {
+  display: 'flex'
+};
+
+const fixedStyle = {
+  width: '200px'
+};
+
+const flexibleStyle = {
+  flexGrow: 1,
+  padding: '10px',
+  'flexFlow': 'row wrap',
+  fontSize: '60px',
+  fontFamily: 'Arial',
+  height: '300px',
+  lineHeight: '1.1em'
+};
 
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+  <div style={ flexContainerStyle }>
+    <div style={ fixedStyle } classID='photo'><img style={ imgStyle } src={ pic }/></div>
+    <div style={ flexibleStyle } classID='bio'>
+      Hello, I'm Kyle.
+      I turn coffee into code.
+    </div>
   </div>
 )
 
