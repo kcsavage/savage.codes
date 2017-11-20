@@ -1,6 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
-var iFrameStyle = {
+
+const iFrameStyle = {
   position: 'absolute', height: '100%', border: 'none', width: '100%'
 };
 const Resume = () => (
